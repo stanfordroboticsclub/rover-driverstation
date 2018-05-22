@@ -1,18 +1,18 @@
-- name: 'Button A'
-  service: 'dummy'
+- name: 'Driver Init'
+  service: '/driver/init'
   column: 0
 #  image: "package://jsk_rviz_plugins/icons/hand-grasp-pose.jpg"
-- name: 'Button B'
-  service: 'dummy'
+- name: 'Driver Halt'
+  service: '/driver/halt'
   column: 0
-- name: 'Button C'
-  service: 'dummy'
+- name: 'Panorama Save'
+  service: '/hugin_panorama/image_saver/save'
   column: 0
-- name: 'Button D'
-  service: 'dummy'
+- name: 'Panorama Reset'
+  service: '/hugin_panorama/reset'
   column: 1
-- name: 'Button E'
-  service: 'dummy'
+- name: 'Panorama Stitch'
+  service: '/hugin_panorama/stitch'
   column: 1
 - name: 'Button F'
   service: 'dummy'
