@@ -2,11 +2,9 @@
 A repo to hold all scripts and files relating to visualization and control from the driverstation
 
 ## UI For ROS Service Calls
-Building on top of jsk rqt plugins (https://github.com/jsk-ros-pkg/jsk_visualization).  
-
-Some changes were made to work with the latest version of Qt.  
-
-Also, need to clone jsk common messages (https://github.com/jsk-ros-pkg/jsk_common_msgs).
+- Building on top of jsk rqt plugins (https://github.com/jsk-ros-pkg/jsk_visualization).  
+- Some changes were made to work with the latest version of Qt.  
+- Also, need to clone jsk common messages (https://github.com/jsk-ros-pkg/jsk_common_msgs).
 
 ### Current (not super optimal) Installation
 1. Clone this repo
