@@ -6,10 +6,9 @@ A repo to hold all scripts and files relating to visualization and control from 
 - Some changes were made to work with the latest version of Qt.  
 - Also, need to clone jsk common messages (https://github.com/jsk-ros-pkg/jsk_common_msgs).
 
-### Current (not super optimal) Installation
-1. Clone this repo
-2. Move jsk-rqt-plugins to catkin_ws/src
-3. Git clone https://github.com/jsk-ros-pkg/jsk_common_msgs in catkin_ws/src
+### Installation
+1. Clone this repo AND submodules:  
+-git clone --recurse-submodules https://github.com/stanfordroboticsclub/rover-driverstation.git 
 
 ### Current Usage
 1. Service Calls: rosrun jsk_rqt_plugins rqt_service_buttons  
