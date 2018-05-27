@@ -1,0 +1,9 @@
+- name: 'ls'
+  command: 'ls'
+  column: 0
+- name: 'pwd'
+  command: 'pwd'
+  column: 0
+- name: 'rosrun jsk_rqt_plugins rqt_service_buttons'
+  command: 'rosrun jsk_rqt_plugins rqt_service_buttons'
+  column: 1
