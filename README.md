@@ -12,7 +12,8 @@ A repo to hold all scripts and files relating to visualization and control from 
 3. Git clone https://github.com/jsk-ros-pkg/jsk_common_msgs in catkin_ws/src
 
 ### Current Usage
-1. rosrun jsk_rqt_plugins rqt_service_buttons  
+1. Servicee Calls: rosrun jsk_rqt_plugins rqt_service_buttons  
+2. Commands: rosrun jsk_rqt_plugins rqt_command_buttons  
 
 To add buttons for serivce calls, modify
 jsk_rqt_plugins/resource/service_button_layout.yaml
@@ -22,4 +23,14 @@ Format of the yaml file should be:
   image: 'path to image for icon' (optional)  
   image_size: 'width and height of icon' (optional)  
   service: 'service' (required)  
+  column: 'column index' (optional, defaults to 0)  
+
+To add buttons for commands, modify
+jsk_rqt_plugins/resource/command_button_layout.yaml
+
+Format of the yaml file should be:  
+\- name: 'button name' (required)  
+  image: 'path to image for icon' (optional)  
+  image_size: 'width and height of icon' (optional)  
+  command: 'command' (required)  
   column: 'column index' (optional, defaults to 0)  
