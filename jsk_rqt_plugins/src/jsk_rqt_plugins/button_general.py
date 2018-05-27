@@ -14,7 +14,7 @@ import math
 from resource_retriever import get_filename
 import yaml
 import os, sys
-from std_srvs.srv import Empty
+from std_srvs.srv import Empty, Trigger
 
 class LineEditDialog(QDialog):
     def __init__(self, parent=None):
@@ -150,7 +150,7 @@ class ServiceButtonGeneralWidget(QWidget):
         """
         return lambda x: self.buttonCallbackImpl(service_name)
     def buttonCallbackImpl(self, service_name):
-        srv = rospy.ServiceProxy(service_name, Empty)
+        srv = rospy.ServiceProxy(service_name, Trigger) #Empty)
         try:
             srv()
         except rospy.ServiceException, e:
