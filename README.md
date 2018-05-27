@@ -12,7 +12,7 @@ A repo to hold all scripts and files relating to visualization and control from 
 3. Git clone https://github.com/jsk-ros-pkg/jsk_common_msgs in catkin_ws/src
 
 ### Current Usage
-1. Servicee Calls: rosrun jsk_rqt_plugins rqt_service_buttons  
+1. Service Calls: rosrun jsk_rqt_plugins rqt_service_buttons  
 2. Commands: rosrun jsk_rqt_plugins rqt_command_buttons  
 
 To add buttons for serivce calls, modify
@@ -34,3 +34,8 @@ Format of the yaml file should be:
   image_size: 'width and height of icon' (optional)  
   command: 'command' (required)  
   column: 'column index' (optional, defaults to 0)  
+
+Suppose you have a command that has a stream of output.  
+You can create a shell script that opens a new terminal and runs the desired command. An example of this is 
+jsk_rqt_plugins/resource/command_scripts/test.sh  
+Then, you can create a button whose command is running this shell script.

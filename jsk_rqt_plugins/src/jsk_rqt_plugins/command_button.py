@@ -57,6 +57,8 @@ class CommandButtonGeneralWidget(QWidget):
         self.show()
     def showError(self, message):
         QMessageBox.about(self, "ERROR", message)
+    def displayMessage(self, message):
+        QMessageBox.about(self, "Result", message)
     def loadLayoutYaml(self, layout_param):
         # Initialize layout of the buttons from yaml file
         # The yaml file can be specified by rosparam
@@ -152,7 +154,7 @@ class CommandButtonGeneralWidget(QWidget):
         return lambda x: self.buttonCallbackImpl(command)
     def buttonCallbackImpl(self, command):
         output = check_output(command.split())
-        self.showError("%s" % output)
+        self.displayMessage("%s" % output)
     def save_settings(self, plugin_settings, instance_settings):
         if self._layout_param:
             instance_settings.set_value("layout_param", self._layout_param)
