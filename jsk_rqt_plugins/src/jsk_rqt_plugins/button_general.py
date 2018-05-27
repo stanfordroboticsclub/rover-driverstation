@@ -150,7 +150,11 @@ class ServiceButtonGeneralWidget(QWidget):
         """
         return lambda x: self.buttonCallbackImpl(service_name)
     def buttonCallbackImpl(self, service_name):
-        srv = rospy.ServiceProxy(service_name, Trigger) #Empty)
+        # Hardcoded lmao 
+        if 'driver' in service_name: 
+        	srv = rospy.ServiceProxy(service_name, Trigger)
+        else: 
+        	srv = rospy.ServiceProxy(service_name, Empty)
         try:
             srv()
         except rospy.ServiceException, e:
