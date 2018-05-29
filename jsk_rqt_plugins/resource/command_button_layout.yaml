@@ -43,6 +43,9 @@
 - name: 'Launch Camera 4'
   command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_start.sh 4 video4'
   column: 3
+- name: 'Launch Camera 5'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_start.sh 5 video5'
+  column: 3
 - name: 'Kill Camera 0'
   command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_stop.sh 0'
   column: 4
@@ -57,4 +60,7 @@
   column: 4
 - name: 'Kill Camera 4'
   command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_stop.sh 4'
+  column: 4
+- name: 'Kill Camera 5'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_stop.sh 5'
   column: 4
