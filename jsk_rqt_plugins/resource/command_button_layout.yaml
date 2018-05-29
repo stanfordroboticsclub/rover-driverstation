@@ -10,6 +10,9 @@
 - name: 'Driver Shutdown'
   command: 'rosservice call /driver/shutdown'
   column: 0
+- name: 'Launch Hugin Panorama'
+	command: 'roslaunch rover_vision hugin_panorama.launch'
+	column: 1 
 - name: 'Panorama Save'
   command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/panorama_save.sh'
   column: 1
