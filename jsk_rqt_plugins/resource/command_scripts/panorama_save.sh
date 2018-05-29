@@ -17,6 +17,6 @@ rosnode kill camera1
 rosnode kill camera2
 
 # Start cameras
-sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resources/command_scripts/camera_start.sh 0
-sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resources/command_scripts/camera_start.sh 1
-sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resources/command_scripts/camera_start.sh 2
+sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resources/command_scripts/camera_start.sh 0 video0
+sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resources/command_scripts/camera_start.sh 1 video1
+sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resources/command_scripts/camera_start.sh 2 video2
