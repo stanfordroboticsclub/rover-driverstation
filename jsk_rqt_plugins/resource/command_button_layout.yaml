@@ -17,7 +17,7 @@
   command: 'rosservice call /hugin_panorama/reset'
   column: 1
 - name: 'Panorama Stitch'
-  command: 'rosservice call /hugin_panorama/stitch'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/panorama_stitch.sh'
   column: 1
 - name: 'Launch Drive'
   command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/drive.sh'
