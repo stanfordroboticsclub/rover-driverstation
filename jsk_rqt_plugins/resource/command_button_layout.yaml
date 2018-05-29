@@ -4,6 +4,12 @@
 - name: 'Driver Halt'
   command: 'rosservice call /driver/halt'
   column: 0
+- name: 'Driver Recover'
+  command: 'rosservice call /driver/recover'
+  column: 0
+- name: 'Driver Shutdown'
+  command: 'rosservice call /driver/shutdown'
+  column: 0
 - name: 'Panorama Save'
   command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/panorama_save.sh'
   column: 1
@@ -13,6 +19,42 @@
 - name: 'Panorama Stitch'
   command: 'rosservice call /hugin_panorama/stitch'
   column: 1
-- name: 'test.py'
-  command: 'sh /home/aa274/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/test.sh'
-  column: 1
+- name: 'Launch Drive'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/drive.sh'
+  column: 2
+- name: 'Launch Arm'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/arm.sh'
+  column: 2
+- name: 'Launch Sensors'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/sensors.sh'
+  column: 2
+- name: 'Launch Camera 0'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_start.sh 0 video0'
+  column: 3
+- name: 'Launch Camera 1'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_start.sh 1 video1'
+  column: 3
+- name: 'Launch Camera 2'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_start.sh 2 video2'
+  column: 3
+- name: 'Launch Camera 3'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_start.sh 3 video3'
+  column: 3
+- name: 'Launch Camera 4'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_start.sh 4 video4'
+  column: 3
+- name: 'Kill Camera 0'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_stop.sh 0'
+  column: 4
+- name: 'Kill Camera 1'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_stop.sh 1'
+  column: 4
+- name: 'Kill Camera 2'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_stop.sh 2'
+  column: 4
+- name: 'Kill Camera 3'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_stop.sh 3'
+  column: 4
+- name: 'Kill Camera 4'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_stop.sh 4'
+  column: 4
