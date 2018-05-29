@@ -58,3 +58,6 @@
 - name: 'Kill Camera 4'
   command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/camera_stop.sh 4'
   column: 4
+- name: 'ssh jetson'
+  command: 'sh /home/rover/catkin_ws/src/rover-driverstation/jsk_rqt_plugins/resource/command_scripts/ssh.sh'
+  column: 5
